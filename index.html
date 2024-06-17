@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" href="./assets/favicon.ico">
+    <link rel="stylesheet" href="./styles.css">
+    <title>B Company</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg sticky-top ">
+        <a class='navbar-brand' href="#sobre-nosotros">B Company</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class='nav-link' href="#sobre-nosotros">Sobre Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class='nav-link' href="#usuarios">Colaboradores</a>
+                </li>
+                <li class="nav-item">
+                    <a class='nav-link' href="#formulario-usuarios">Formulario</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+
+    <div class="container my-5">
+        <div id="sobre-nosotros" class="section">
+            <h2 class="text-center mb-3 title">Sobre Nosotros</h2>
+            <p>En <strong>B-Company</strong>, una líder en la industria de la construcción, estamos comprometidos con la
+                transformación de espacios y la innovación en la construcción. Fundada en el año 2010, nuestra misión es
+                desarrollar infraestructura que no solo mejore la calidad de vida, sino que también respete y proteja el medio
+                ambiente.</p>
+            <p>Nuestra visión se centra en ser más que una empresa de construcción; <strong>es un compromiso con la
+                    sostenibilidad y el bienestar</strong>. Aseguramos prácticas que superan los estándares de seguridad y
+                salud, manteniendo un entorno de trabajo óptimo para todos nuestros empleados y asegurando su bienestar
+                integral.</p>
+            <p>
+                Como pioneros en la implementación de tecnologías avanzadas, <strong>utilizamos materiales reciclados y técnicas
+                    de construcción eco-amigables</strong>, incluyendo la impresión 3D para optimizar recursos y minimizar
+                residuos. Nuestro enfoque no solo refleja la innovación sino también nuestra responsabilidad con el planeta.
+            </p>
+            <p>
+                <strong>La educación y el desarrollo profesional</strong> de nuestros colaboradores son pilares fundamentales en
+                B-Company. Proveemos programas de capacitación continua y becas educativas para sus familias, preparando líderes
+                que promuevan cambios positivos dentro y fuera del ámbito laboral.
+            </p>
+            <p class="mb-5">
+                Esta página web está diseñada para facilitar el <strong>proceso de ingreso de nuevos colaboradores</strong>,
+                ofreciendo una plataforma sencilla para que potenciales empleados se unan a nuestra misión. Aquí puedes
+                encontrar un formulario de aplicación y registro para iniciar tu camino en B-Company, donde construir es sinónimo de innovar.
+            </p>
+        </div>
+        
+        
+    <div id="usuarios" class="section">
+        <h2 class="text-center mb-5 title">Colaboradores</h2>
+        <div id="user-grid" class="row">
+            <div class="col-md-4 col-lg-3 col-xl-3 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <p><strong>Nombre:</strong></p>
+                        <h5 class="card-title">Amy Lovelace</h5>
+                        <p><strong>Email:</strong></p>
+                        <p class="card-text email">amy@gmail.com</p>
+
+                        <p><strong>Cargo:</strong></p>
+                        <p class="card-text">Developer</p>
+
+                        <p><strong>Fecha de Ingreso:</strong></p>
+                        <p class="card-text">1-03-2024</p>
+                    </div>
+                    <div class="card-footer">
+                        <button type="button" class="btn btn-danger btn-block"
+                            onclick="eliminarUsuario(this)">Eliminar</button>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </div>
+        
+        <div id="alertas"></div>
+      
+        <div id="formulario-usuarios" class="section">
+            <div class="row justify-content-center">
+                <div class="col-md-10">
+                    <h1 class="text-center mb-5 title">Formulario</h1>
+                    <form class="form-horizontal">
+                        <div class="form-group">
+                            <label for="nombre" class="col-sm-4 control-label text-start form-name">Nombre:</label>
+                            <div class="col-sm-12">
+                                <input type="text" class="form-control" id="nombre" name="nombre">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="apellido" class="col-sm-4 control-label">Apellido:</label>
+                            <div class="col-sm-12">
+                                <input type="text" class="form-control" id="apellido" name="apellido">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="col-sm-4 control-label">Email:</label>
+                            <div class="col-sm-12">
+                                <input type="email" class="form-control" id="email" name="email">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="cargo" class="col-sm-4 control-label">Cargo:</label>
+                            <div class="col-sm-12">
+                                <input type="text" class="form-control" id="cargo" name="cargo">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="fecha-nacimiento" class="col-sm-4 control-label">Fecha de nacimiento:</label>
+                            <div class="col-sm-12">
+                                <input type="date" class="form-control" id="fecha-nacimiento" name="fecha nacimiento">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="fecha-ingreso" class="col-sm-4 control-label">Fecha de ingreso:</label>
+                            <div class="col-sm-12">
+                                <input type="date" class="form-control" id="fecha-ingreso" name="fecha ingreso">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-12 d-flex justify-content-center">
+                                <button type="submit" class=" col-sm-8 btn btn-outline-success btn-lg"><p class="btn-txt">Send</p></button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="confirmModal" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Confirmar Datos del Usuario</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Por favor confirma si los datos son correctos:</p>
+                    <ul id="userDataConfirmation">
+                        <!-- Datos del usuario aquí -->
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger btn-block" data-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-success btn-block" id="confirmAddUser">Confirmar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="text-center">
+        <p>&copy;2024 ~ B Company ~ </p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>

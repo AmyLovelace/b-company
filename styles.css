@@ -1,0 +1,158 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-image: url(./assets/bg.jpg);
+}
+
+nav {
+    text-align: center;
+    padding: 20px;
+    font-size: 25px;
+}
+
+.navbar {
+    background-color: rgba(255, 255, 255, 0.092);
+    backdrop-filter: blur(20px);
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 10px;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.navbar-brand:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+    color: rgb(70, 90, 37);
+}
+
+.nav-link:hover {
+    color: #547b1a;
+    transform: scale(0.8);
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-item.active .nav-link {
+    transform: scale(1);
+    color: rgb(39, 78, 15);
+}
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.container {
+    margin-top: 30px;
+    padding: 0;
+}
+
+
+.container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.section {
+    margin-bottom: 40px;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.092);
+    backdrop-filter: blur(20px);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#sobre-nosotros {
+    border-left: 5px solid #1f6518; 
+}
+
+#sobre-nosotros p {
+    font-size: 20px; 
+    text-align: justify; 
+
+}
+#sobre-nosotros .title {
+    font-size: 30px;
+    font-weight: 600; 
+}
+#usuarios .title {
+    font-size: 30px;
+    font-weight: 600; 
+}
+
+#usuarios{
+    border-left: 5px solid #35a09e; 
+}
+
+#formulario-usuarios .title {
+    font-size: 30px;
+    font-weight: 600; 
+}
+
+#formulario-usuarios {
+    border-left: 5px solid #9e1a42; 
+}
+
+.modal-footer button {
+    width: 100%; 
+    margin-bottom: 10px; 
+}
+.modal-body {
+    color: black;
+    font-size: 25px;
+}
+
+.modal-header {
+    color: black;
+}
+
+.modal-backdrop.show {
+    backdrop-filter: blur(10px); 
+}
+
+.modal-content {
+    background-color: rgba(162, 208, 159, 0.868);
+}
+
+.modal-footer button:last-child {
+    margin-bottom: 0;
+}
+.btn-block {
+    margin-top: 10px; 
+}
+
+.btn-lg{
+    border: 2px solid ;
+}
+
+.btn-txt{
+    padding: 0;
+    margin: 0;
+    color: aliceblue;
+}
+
+.card {
+    border-radius: 10px 89px 10px 10px;
+    -webkit-border-radius: 10px 89px 10px 10px;
+    -moz-border-radius: 10px 89px 10px 10px;
+}
+
+.card-body p {
+    margin-bottom: 0; 
+}
+
+.card-title, .card-text {
+    margin-top: 0;}
+
+.card-footer {
+    padding: 1rem 1rem; 
+}
+
